@@ -4,26 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Students - Contoso University</title>
-    <link rel="stylesheet" href="/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/wwwroot/css/site.css"/>
-    <script
-            src="https://code.jquery.com/jquery-3.7.1.min.js" 
-            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
-            crossorigin="anonymous">
-        </script>
-        <script>
-            $(function(){
-                $('#header').load('/Pages/Shared/header.html');
-                $('#footer').load('/Pages/Shared/footer.html');
-            });
-        </script>
-    </style>
+    <link rel="stylesheet" href="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="wwwroot/css/site.css"/>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark  border-bottom box-shadow mb-3" style="background-color:#7017de">
             <div class="container">
-                <a class="navbar-brand" href="/Pages/Students/index.html">Contoso University</a>
+                <a class="navbar-brand" href="Pages/Students/index.html">Contoso University</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -31,16 +19,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">                        
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="/Pages/Students/index.html">Students</a>
+                            <a class="nav-link text-light" href="Pages/Students/index.html">Students</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="/Pages/Courses/index.html">Courses</a>
+                            <a class="nav-link text-light" href="Pages/Courses/index.html">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="/Pages/Instructors/index.html">Instructors</a>
+                            <a class="nav-link text-light" href="Pages/Instructors/index.html">Instructors</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="/Pages/Departments/index.html">Departments</a>
+                            <a class="nav-link text-light" href="Pages/Departments/index.html">Departments</a>
                         </li>
                         <li class="nav-item dropdown ms-auto">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -51,7 +39,7 @@
                             </a>
                             <ul class="dropdown-menu">                                
                                 <li>
-                                    <a class="dropdown-item" href="/Pages/Users/index.html">
+                                    <a class="dropdown-item" href="Pages/Users/index.html">
                                         Account
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
                                             <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
@@ -60,7 +48,7 @@
                                     </a>
                                 </li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="/index.html">
+                                <li><a class="dropdown-item" href="index.html">
                                         Logout
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z" />
@@ -81,16 +69,16 @@
             <h1>Students</h1>
 
             <p>
-                <a href="/Pages/Students/create.html">Create New</a>
+                <a href="Pages/Students/create.html">Create New</a>
             </p>
 
-            <form href="/Pages/Students/index.html" method="get">
+            <form href="Pages/Students/index.html" method="get">
                 <div class="form-actions no-color">
                     <p>
                         Find by Name:
                         <input type="text" name="SearchString" />
                         <input type="submit" value="Search" class="btn btn-primary" />
-                        <a href="/Pages/Students/index.html">Back to full List</a>
+                        <a href="Pages/Students/index.html">Back to full List</a>
                     </p>
                 </div>
             </form>
@@ -99,7 +87,7 @@
                 <thead>
                     <tr>
                         <th>
-                            <a href="/Pages/Students/index.html">
+                            <a href="Pages/Students/index.html">
                                 Last Name
                             </a>
                         </th>
@@ -107,7 +95,7 @@
                             First Name
                         </th>
                         <th>
-                            <a href="/Pages/Students/index.html">
+                            <a href="Pages/Students/index.html">
                                 Enrollment Date
                             </a>
                         </th>
@@ -126,9 +114,9 @@
                             12-03-2019
                         </td>
                         <td>
-                            <a href="/Pages/Students/edit.html">Edit</a> |
-                            <a href="/Pages/Students/details.html">Details</a> |
-                            <a href="/Pages/Students/delete.html">Delete</a>
+                            <a href="Pages/Students/edit.html">Edit</a> |
+                            <a href="Pages/Students/details.html">Details</a> |
+                            <a href="Pages/Students/delete.html">Delete</a>
                         </td>
                     </tr>
                     <tr>
@@ -142,9 +130,9 @@
                             22-07-2019
                         </td>
                         <td>
-                            <a href="/Pages/Students/edit.html">Edit</a> |
-                            <a href="/Pages/Students/details.html">Details</a> |
-                            <a href="/Pages/Students/delete.html">Delete</a>
+                            <a href="Pages/Students/edit.html">Edit</a> |
+                            <a href="Pages/Students/details.html">Details</a> |
+                            <a href="Pages/Students/delete.html">Delete</a>
                         </td>
                     </tr>
                     <tr>
@@ -158,9 +146,9 @@
                             03-05-2018
                         </td>
                         <td>
-                            <a href="/Pages/Students/edit.html">Edit</a> |
-                            <a href="/Pages/Students/details.html">Details</a> |
-                            <a href="/Pages/Students/delete.html">Delete</a>
+                            <a href="Pages/Students/edit.html">Edit</a> |
+                            <a href="Pages/Students/details.html">Details</a> |
+                            <a href="Pages/Students/delete.html">Delete</a>
                         </td>
                     </tr>
                     <tr>
@@ -174,9 +162,9 @@
                             25-10-2020
                         </td>
                         <td>
-                            <a href="/Pages/Students/edit.html">Edit</a> |
-                            <a href="/Pages/Students/details.html">Details</a> |
-                            <a href="/Pages/Students/delete.html">Delete</a>
+                            <a href="Pages/Students/edit.html">Edit</a> |
+                            <a href="Pages/Students/details.html">Details</a> |
+                            <a href="Pages/Students/delete.html">Delete</a>
                         </td>
                     </tr>
                     <tr>
@@ -190,9 +178,9 @@
                             02-03-2020
                         </td>
                         <td>
-                            <a href="/Pages/Students/edit.html">Edit</a> |
-                            <a href="/Pages/Students/details.html">Details</a> |
-                            <a href="/Pages/Students/delete.html">Delete</a>
+                            <a href="Pages/Students/edit.html">Edit</a> |
+                            <a href="Pages/Students/details.html">Details</a> |
+                            <a href="Pages/Students/delete.html">Delete</a>
                         </td>
                     </tr>
                     <tr>
@@ -206,18 +194,18 @@
                             30-09-2018
                         </td>
                         <td>
-                            <a href="/Pages/Students/edit.html">Edit</a> |
-                            <a href="/Pages/Students/details.html">Details</a> |
-                            <a href="/Pages/Students/delete.html">Delete</a>
+                            <a href="Pages/Students/edit.html">Edit</a> |
+                            <a href="Pages/Students/details.html">Details</a> |
+                            <a href="Pages/Students/delete.html">Delete</a>
                         </td>
                     </tr>    
                 </tbody>
             </table>
 
-            <a href="/Pages/Students/index.html" class="btn btn-primary">
+            <a href="Pages/Students/index.html" class="btn btn-primary">
                 Previous
             </a>
-            <a href="/Pages/Students/index.html" class="btn btn-primary">
+            <a href="Pages/Students/index.html" class="btn btn-primary">
                 Next
             </a>
         </main>
@@ -225,13 +213,13 @@
 
     <footer class="border-top footer text-muted" style="background-color:#3e3c3e">
         <div class="container text-light">
-            &copy; 2023 - Contoso University - <a href="/Pages/privacy.html">Privacy</a>
+            &copy; 2023 - Contoso University - <a href="Pages/privacy.html">Privacy</a>
         </div>
     </footer>
 
-    <script src="/wwwroot/lib/jquery/dist/jquery.min.js"></script>
-    <script src="/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/wwwroot/js/site.js"></script>
+    <script src="wwwroot/lib/jquery/dist/jquery.min.js"></script>
+    <script src="wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="wwwroot/js/site.js"></script>
 
 </body>
 </html>
